@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <!-- Navigation bar -->
+
+
+        <header class="header">
+            <h1 class="logo">
+                <a href="index.html">BookLy</a>
+            </h1>
+            <ul class="main-nav">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <span id="navbar"></span>
+            </ul>
+
+        </header>
+
+        <div class="container">
+            <div class="box">
+
+
+                <div class="row">
+                    <div>
+                        <h1 class="contact-heading">Login</h1>
+                        <div class="contact-us-container">
+                            <div class="contact-us-img">
+                                <img src="./login.png" alt="contact"/>
+                            </div>
+                            <form name="contact-form" class="contact-us-form" onsubmit="login(event)">
+                                <div class="form-group">
+                                    <label for="Email">Email</label><br>
+                                    <input type="text" class="form-control" name="email" placeholder="Email" id="loginEmail" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label><br>
+                                    <input type="password" class="form-control" name="password" placeholder="password" id="loginPassword" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary" name="OK" value="Submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="response_msg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-section">
+                <p class="copy">Copyright<span>&copy</span>
+                    2022. All Rights Reserved</p>
+                <p>Created by Abhay Landge Patil and Rishi Singh</p>
+            </div>
+        </footer>
+        <script src="./login.js"></script>
+    </body>
+</html>
